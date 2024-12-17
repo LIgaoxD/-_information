@@ -1,0 +1,11 @@
+<view>
+	<map 
+	class="map" 
+	longitude="{{longitude}}" 
+	latitude="{{latitude}}" 
+	style="height: {{windowHeight}}px;width: 100%;" 
+	name=""
+	scale="13.5"
+	markers="{{markers}}"
+	></map>
+</view>

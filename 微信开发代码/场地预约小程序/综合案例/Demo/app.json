@@ -1,0 +1,41 @@
+{
+	"pages": [
+		"pages/authorize/authorize",
+		"pages/index/index",
+		"pages/reserve/reserve",
+		"pages/user/user",
+		"pages/reserveInfo/reserveInfo"
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#1296db",
+		"navigationBarTitleText": "校园场地预约系统",
+		"navigationBarTextStyle": "white"
+	},
+	"sitemapLocation": "sitemap.json",
+	"tabBar": {
+		"color": "#707070",
+		"selectedColor": "#1296db",
+		"borderStyle": "white",
+		"backgroundColor": "#fff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "images/tab/index2.png",
+				"selectedIconPath": "images/tab/index.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/reserve/reserve",
+				"iconPath": "images/tab/reserve2.png",
+				"selectedIconPath": "images/tab/reserve.png",
+				"text": "预约"
+			},
+			{
+				"pagePath": "pages/user/user",
+				"iconPath": "images/tab/user2.png",
+				"selectedIconPath": "images/tab/user.png",
+				"text": "个人中心"
+			}
+		]
+	}
+}

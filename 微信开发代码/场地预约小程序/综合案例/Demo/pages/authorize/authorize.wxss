@@ -1,0 +1,9 @@
+/* pages/login/login.wxss */
+button{
+	width: 60%;
+	margin:20px auto;
+}
+image{
+	width: 100%;
+	height: 200px;
+}

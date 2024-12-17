@@ -1,0 +1,36 @@
+<!-- icon -->
+  <view class="icon-box">
+    <icon type="success" size="100"></icon>
+    <view class="icon-box-ctn">
+      <view class="icon-box-title">成功</view>
+      <view class="icon-box-desc">用于表示操作顺利完成</view>
+    </view>
+  </view>
+  <view class="icon-box">
+    <icon type="info" size="100"></icon>
+    <view class="icon-box-ctn">
+      <view class="icon-box-title">提示</view>
+      <view class="icon-box-desc">用于表示信息提示；也常用于缺乏条件的操作拦截，提示用户所需信息</view>
+    </view>
+  </view>
+  <view class="icon-box">
+    <icon type="warn" size="100" color="#C9C9C9"></icon>
+    <view class="icon-box-ctn">
+      <view class="icon-box-title">普通警告</view>
+      <view class="icon-box-desc">用于表示操作后将引起一定后果的情况；也用于表示由于系统原因而造成的负向结果</view>
+    </view>
+  </view>
+  <view class="icon-box">
+    <icon type="warn" size="100"></icon>
+    <view class="icon-box-ctn">
+      <view class="icon-box-title">强烈警告</view>
+      <view class="icon-box-desc">用于表示由于用户原因造成的负向结果；也用于表示操作后将引起不可挽回的严重后果的情况</view>
+    </view>
+  </view>
+  <view class="icon-box">
+    <icon type="waiting" size="100"></icon>
+    <view class="icon-box-ctn">
+      <view class="icon-box-title">等待</view>
+      <view class="icon-box-desc">用于表示等待，告知用户结果需等待</view>
+    </view>
+  </view>

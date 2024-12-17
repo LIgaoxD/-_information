@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "书城小程序",
+  "usingComponents": {
+    "book": "/components/book"
+  }
+}

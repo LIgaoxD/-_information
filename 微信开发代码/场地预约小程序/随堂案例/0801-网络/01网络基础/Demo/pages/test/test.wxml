@@ -1,0 +1,9 @@
+<!--pages/test/test.wxml-->
+<view class="title">
+    <text>查询手机号码归属地</text>
+</view>
+<view class="box">
+    <text>请输入手机号码：</text>
+    <input class="inputtel" bindchange="change" type="number"></input>
+</view>
+<button class="btn" bindtap="btntap">查询</button>

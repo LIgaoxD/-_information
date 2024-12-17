@@ -1,0 +1,14 @@
+<!-- video -->
+<view>
+	<view class="title">视频播放器</view>
+	<video 
+	src="../video/v2.mp4" 
+	loop="true" 
+	danmu-list="{{list}}" 
+	play-btn-position="center"
+	enable-play-gesture="true"
+	show-mute-btn="true" 
+	danmu-btn="true" 
+	autoplay="true"
+	enable-danmu="true"></video>
+</view>

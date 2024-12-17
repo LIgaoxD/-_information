@@ -1,0 +1,32 @@
+<view>
+	<!-- 轮播 -->
+	<swiper autoplay="true">
+		<swiper-item wx:for="{{images}}" wx:key="*this" >
+			<image mode="aspectFill" class="swiper-img" src="{{item.src}}"></image>
+		</swiper-item>
+	</swiper>
+	<!-- 场地分类 -->
+	<view class="icon-box">
+		<view wx:for="{{iconList}}" wx:key="*this" >
+			<image class="icon-img" src="{{item.iconSrc}}"></image>
+			<view>{{item.title}}</view>
+		</view>
+	</view>
+	<!-- 活动列表 -->
+	<view class="activity-box">
+			<view class="activity-title">
+				活动列表
+			</view>
+		<view>
+			<view class="activity-item" wx:for="{{activityList}}" wx:key="*this">
+				<image mode="aspectFit" class="activity-img" src="{{item.img}}"></image>
+				<view>
+					<view class="activity-item-title">{{item.title}}</view>
+					<view >时间：{{item.time}}</view>
+					<view >地点：{{item.place}}</view>
+					<view >活动人数：{{item.num}}</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

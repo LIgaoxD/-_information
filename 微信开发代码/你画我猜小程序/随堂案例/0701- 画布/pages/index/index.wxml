@@ -1,0 +1,6 @@
+ <!-- canvas -->
+ <view>
+		<!-- 绘制黄色矩形 -->
+	 <canvas canvas-id='customCanvas'></canvas>
+ </view>
+

@@ -1,0 +1,21 @@
+<view>
+	<!-- 背景图 -->
+	<image style="height: {{windowHeight}}px;width: 100%;" src="../../images/bg/bg.jpg"></image>
+	<!-- 内容区 -->
+	<view class="box">
+		<form bindsubmit="formSubmit">
+			<view class="info-box">
+				<input name="name" type="text" placeholder="输入您的姓名" bindblur="checkName"/>
+				<image  wx:if="{{!checkName}}" class="err-img" src="../../images/icon/err.png"></image>
+			</view>
+			<view class="info-box">
+				<input name="phone" type="text" placeholder="输入您的电话"  bindblur="checkPhone"/>
+				<image wx:if="{{!checkPhone}}" class="err-img" src="../../images/icon/err.png"></image>
+			</view>
+			<view class="info-box">
+				<input name="num" type="number" placeholder="参加人数" />
+			</view>
+			<button form-type="submit" animation="{{animation}}"  report-submit>发送</button>
+		</form>
+	</view>
+</view>

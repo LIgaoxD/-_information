@@ -1,0 +1,25 @@
+<!-- flex布局 -->
+<view>
+	<view class="left-box" >
+		<!-- 列表渲染，渲染flex属性列表-->
+		<view  wx:for="{{flexData}}" bindtap="getFlex" data-info="{{itemName.title}}" wx:for-item="itemName">
+			<view class="item-title">{{itemName.title}}</view>
+			<!-- 条件渲染，只渲染当前flex属性值对应的按钮 -->
+			<button  wx:for="{{itemName.arr}}" wx:if="{{flex===itemName.title}}" data-info="{{item}}" bindtap="change">{{item}}</button>
+		</view>
+	</view>
+	<view class="right-box">
+		<!-- 三元表达式：判断当前是否为align-content，如果是添加flex-wrap:wrap -->
+		<view class="{{flex==='align-content'?'flex-box1':'flex-box'}}" style="display: flex;{{flex}}:{{flexValue}}">
+			<view class="box" style="background:red;line-height: 15px;">1</view>
+			<view class="box" style="background:black;line-height: 20px;height:30px;">2</view>
+			<view class="box" style="background:blue;line-height: 25px;height:50px;">3</view>
+			<view class="box" style="background:green;line-height: 30px;height:auto;">4</view>
+			<!-- 条件渲染，只有演示flex中flex-wrap和align-content属性时显示 -->
+			<view wx:if="{{flex==='flex-wrap'||flex==='align-content'}}" class="box" style="background:red;">5</view>
+			<view wx:if="{{flex==='flex-wrap'||flex==='align-content'}}" class="box" style="background:black;">6</view>
+			<view wx:if="{{flex==='flex-wrap'||flex==='align-content'}}" class="box" style="background:blue;">7</view>
+			<view wx:if="{{flex==='flex-wrap'||flex==='align-content'}}" class="box" style="background:green;">8</view>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,28 @@
+<view >
+	<view class="section">
+		<text>设置颜色</text>
+		<view >
+			<slider bindchange="slider1change" activeColor="red" backgroundColor="blue" block-color="pink"/>
+		</view>
+	</view>
+
+	<view class="section">
+		<text>显示当前value</text>
+		<view >
+			<slider bindchange="slider3change" show-value />
+		</view>
+	</view>
+	<view class="section">
+		<text>设置步长为10</text>
+		<view>
+			<slider bindchange="slider2change" step="10" show-value />
+		</view>
+	</view>
+
+	<view class="section">
+		<text>设置最小/最大值</text>
+		<view >
+			<slider bindchange="slider4change" min="50" max="200" show-value />
+		</view>
+	</view>
+</view>

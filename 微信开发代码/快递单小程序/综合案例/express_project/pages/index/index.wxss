@@ -1,0 +1,86 @@
+.content{
+  padding: 10px 16px;
+  background: #f8f8f8;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.express_title{
+  display: flex;
+  align-items: center;
+}
+.content_box{
+  background: #fff;
+  margin-bottom: 16px;
+}
+.express_title>text{
+  font-size: 20px;
+}
+.express_title>text:nth-child(1){
+  font-size: 12px;
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  line-break: 18px;
+  margin-right: 5px;
+}
+.express_title>text.red{
+  background: #f00;
+}
+.express_title>text:nth-child(2){
+  display: block;
+  height: 50px;
+  line-height: 50px;
+}
+
+.user_info{
+  display: flex;
+  padding: 16px 0;
+}
+.user_info input{
+  padding: 0 5px;
+}
+
+.picker{
+  padding: 13px;
+  background-color: #FFFFFF;
+  color: #666;
+}
+
+.remarks_item_box{
+  display: flex;
+  padding: 15px 0;
+}
+.remarks_item{
+ color: #555
+}
+.remarks_item_check{
+  transform: scale(.6);
+}
+
+#detailBox{
+  display: block;
+  width: 96%;
+  height: 100px;
+  border: 1px solid rgb(190, 190, 190);
+  margin: 10px auto;
+}
+#detailBox::placeholder{
+  font-size: 14px;
+}
+
+.payRadio{
+  display: flex;
+  align-items: center;
+  padding: 16px 0;
+}
+.payRadio_btn{
+  color: #444;
+  margin-left: 10px;
+}
+#pay01,#pay02{
+  transform: scale(.7);
+}

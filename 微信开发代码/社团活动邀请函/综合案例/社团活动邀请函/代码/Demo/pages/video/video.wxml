@@ -1,0 +1,13 @@
+<view >
+	<!-- 背景图 -->
+	<image style="height: {{windowHeight}}px;width: 100%;" class="bg" src="../../images/bg/bg.jpg"></image>
+	<!-- 内容区 -->
+	<view class="box" style="height: {{windowHeight}}px;">
+		<view class="item" wx:for="{{arr}}" wx:key="*this">
+			<view class="item-title">标题:{{item.title}}</view>
+			<view class="item-time">时间:{{item.time}}</view>
+			<video class="item-video" src="{{item.src}}"></video>
+		</view>
+	</view>
+	
+</view>

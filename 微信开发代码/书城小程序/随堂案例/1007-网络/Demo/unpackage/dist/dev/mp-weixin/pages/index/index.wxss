@@ -1,0 +1,26 @@
+
+.title {
+	text-align: center;
+	font-size: 30px;
+	margin:10px 0;
+}
+.box{
+	margin:10px 0px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	font-size: 25px;
+}
+.picker-box{
+	color: blue;
+}
+.grade-box{
+	font-size: 20px;
+	margin:50px;
+	border: #333333 1px dashed;
+	padding: 10px;
+}
+

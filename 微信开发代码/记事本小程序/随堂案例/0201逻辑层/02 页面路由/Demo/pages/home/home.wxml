@@ -1,0 +1,5 @@
+<view>
+	HOME
+</view>
+
+<button bindtap="nav">跳转</button>

@@ -1,0 +1,9 @@
+.scroll-box{
+	height:200px;
+	background-color: #ccc;
+}
+.viewBox{
+	height: 50px;
+	width: 100%;
+	text-align: center;
+}

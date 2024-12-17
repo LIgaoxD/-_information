@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/listMenu/listMenu",
+    "pages/shoppingCart/shoppingCart",
+    "pages/address/address",
+    "pages/newAddress/newAddress",
+    "pages/settlement/settlement"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "欢迎光临港式茶餐厅",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

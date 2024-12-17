@@ -1,0 +1,10 @@
+<!-- image组件 -->
+<view>
+	<view class="title">图片不同展示方式</view>
+	<view class="section" wx:for="{{array}}" wx:for-item="item">
+      <view >{{item.text}}</view>
+      <view >
+        <image style="width: 200px; height: 200px; background-color: #eeeeee;" mode="{{item.mode}}" src="{{src}}"></image>
+      </view>
+    </view>
+</view>

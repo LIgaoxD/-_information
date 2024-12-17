@@ -1,0 +1,63 @@
+<!-- 事件绑定 -->
+<view>
+	<view class="box">
+		<view>普通事件</view>
+		<button bindtap="handleTap1">view</button>
+	</view>
+	<view class="box">
+		<!-- bind绑定事件会向上触发冒泡 -->
+		<view>事件冒泡</view>
+		<view bindtap="handleTap2">
+			<button>outer view</button>
+			<view bindtap="handleTap1">
+				<button>inner view</button>
+			</view>
+		</view>
+	</view>
+	<view class="box">
+		<!-- 除 bind 外，也可以用 catch 来绑定事件。与 bind 不同， catch 会阻止事件向上冒泡。 -->
+		<view>阻止事件冒泡</view>
+		<view bindtap="handleTap3">
+			<button>outer view</button>
+			<view catchtap="handleTap2">
+				<button>middle view</button>
+				<view bindtap="handleTap1">
+					<button>inner view</button>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="box">
+		<!-- mut-bind 是"互斥"的，只会有其中一个绑定函数被触发 -->
+		<view>互斥事件</view>
+		<view mut-bind:tap="handleTap3">
+			<button>outer view</button>
+			<view id="middle" bindtap="handleTap2">
+				<button>middle view</button>
+				<view id="inner" mut-bind:tap="handleTap1">
+					<button>inner view</button>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="box">
+		<!-- 触摸类事件支持捕获阶段。捕获阶段位于冒泡阶段之前，且在捕获阶段中，事件到达节点的顺序与冒泡阶段恰好相反。需要在捕获阶段监听事件时，可以采用capture-bind、capture-catch -->
+		<view>捕获事件</view>
+		<view bind:touchstart="handleTap1" capture-bind:touchstart="handleTap2">
+			<button>outer view</button>
+			<view id="inner" bind:touchstart="handleTap3" capture-bind:touchstart="handleTap4">
+				<button>inner view</button>
+			</view>
+		</view>
+	</view>
+	<view class="box">
+		<!-- capture-catch关键字将中断捕获阶段和取消冒泡阶段 -->
+		<view>中断捕获、取消冒泡</view>
+		<view id="outer" bind:touchstart="handleTap1" capture-catch:touchstart="handleTap2">
+			<button>outer view</button>
+			<view id="inner" bind:touchstart="handleTap3" capture-bind:touchstart="handleTap4">
+				<button>inner view</button>
+			</view>
+		</view>
+	</view>
+</view>

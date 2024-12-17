@@ -1,0 +1,62 @@
+<view class="content">
+  <!-- 寄件人信息 -->
+  <view class="content_box">
+    <!-- 标题 -->
+    <view class="express_title">
+      <text>寄</text>
+      <text>寄件人</text>
+    </view>
+    <!-- 姓名         电话 -->
+    <view class="user_info">
+      <input type="text" placeholder="请输入真实姓名" bindblur="mailName"/>
+      <input type="number" placeholder="寄件人电话" bindblur="mailPhone"/>
+    </view>
+    <!-- 城市区域 -->
+    <view class="section">
+      <view class="section__title">寄件省市区选择:</view>
+      <picker mode="region" bindchange="bindRegionChange" value="{{region}}">
+        <view class="picker">
+          {{region[0]}}，{{region[1]}}，{{region[2]}}
+        </view>
+      </picker>
+    </view>
+    <!-- 快递备注(易碎，贵重，不可沾水，其他) -->
+    <view class="remarks_box">
+      <view class="remarks_title">快递标签：</view>
+      <checkbox-group class="remarks_item_box" bindchange="mailLabel">
+        <view class="remarks_item" wx:for="{{mailLabel}}" wx:key="normal">
+          <checkbox id="label0{{item.id}}" class="remarks_item_check" value="{{item.id}}"/>
+          <label for="label0{{item.id}}">{{item.text}}</label>
+        </view>
+      </checkbox-group>
+    </view>
+  </view>
+  <!-- 收件人信息 -->
+  <view class="content_box">
+    <!-- 标题 -->
+    <view class="express_title">
+      <text class="red">收</text>
+      <text>收件人</text>
+    </view>
+    <!-- 姓名         电话 -->
+    <view class="user_info">
+      <input type="text" placeholder="请输入真实姓名" bindblur="collectName"/>
+      <input type="number" placeholder="收件人电话" bindblur="collectPhone"/>
+    </view>
+    <!-- 详细地址 -->
+    <view>收件人详细地址：</view>
+    <textarea id="detailBox" cols="30" rows="10" placeholder="例如(XXXX省XX市XX街道XX小区)" bindblur="collectAdress"></textarea>
+    <!-- 费用结算方式 -->
+    <view class="payRadio">
+      <view>费用结算方式：</view>
+      <radio-group class="payRadio_btn">
+        <radio id="pay01" value="立即支付" />
+        <label for="pay01">先行结算</label>
+        <radio id="pay02" value="货到付款"/>
+        <label for="pay02">货到付款</label>
+      </radio-group>
+    </view>
+  </view>
+  <!-- 寄件按钮 -->
+  <button type="primary" bindtap="submitBtn">立即下单</button>
+</view>

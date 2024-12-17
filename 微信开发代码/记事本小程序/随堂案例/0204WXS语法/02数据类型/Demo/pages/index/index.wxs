@@ -1,0 +1,49 @@
+//number：整数、小数
+var a = 10;
+var PI = 3.141592653589793;
+
+//string:""、''两种写法
+var str1='hello world';
+var str2="hello world";
+
+//boolean:布尔值只有两个特定的值：true 和 false。
+var b=true;
+
+//array
+var arr = [1,"2",{},function(){}];
+
+//object:object 是一种无序的键值对
+var o = {
+  'string': 1,  //object 的 key 可以是字符串
+  const_var: 2,  //object 的 key 也可以是符合变量定义规则的标识符
+  func: {}, //object 的 value 可以是任何类型
+};
+
+//date:时间
+var date = getDate(); //返回当前时间对象
+date = getDate(1500000000000);
+// Fri Jul 14 2017 10:40:00 GMT+0800 (中国标准时间)
+date = getDate('2017-7-14');
+// Fri Jul 14 2017 00:00:00 GMT+0800 (中国标准时间)
+date = getDate(2017, 6, 14, 10, 40, 0, 0);
+// Fri Jul 14 2017 10:40:00 GMT+0800 (中国标准时间)
+
+//regexp：正则表达
+var reg = getRegExp("x", "img")
+
+
+function fun (){
+	console.log(a);
+	console.log(PI);
+	console.log(str1);
+	console.log(str2);
+	console.log(b);
+	console.log(arr[0]);
+	console.log(o['string']);
+	console.log(o.const_var);
+	console.log(date);
+	console.log(reg);
+}
+module.exports ={
+	fun:fun
+}

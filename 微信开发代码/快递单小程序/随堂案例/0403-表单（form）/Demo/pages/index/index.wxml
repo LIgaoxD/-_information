@@ -1,0 +1,10 @@
+<form bindreset="formRest" bindsubmit="formSubmit">
+	<checkbox-group name="check">
+		<checkbox value="北京" checked="true" />北京
+		<checkbox value="上海" />上海
+		<checkbox value="广州" />广州
+		<checkbox value="深圳" />深圳
+	</checkbox-group>
+	<button form-type="submit" type="primary">提交</button>
+	<button form-type="reset" type="warn">重置</button>
+</form>

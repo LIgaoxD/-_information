@@ -1,0 +1,14 @@
+<view>
+	<view>checkbox单独使用</view>
+	<checkbox checked="true" color="red" />选中
+	<checkbox />未选中
+	<view>和checkbox-group组合使用</view>
+	<view>
+		<checkbox-group bindchange="change">
+			<checkbox value="北京" />北京
+			<checkbox value="上海" />上海
+			<checkbox value="广州" checked="true" />广州
+			<checkbox value="深圳" />深圳
+		</checkbox-group>
+	</view>
+</view>

@@ -1,0 +1,13 @@
+.title{
+	text-align: center;
+	width: 100%;
+	font-weight:bold ;
+	font-size:25px ;
+}
+textarea{
+	margin: 20px auto;
+	border:1px solid #000;
+	width:80%;
+	box-sizing:border-box;
+	font-size: 20px;
+}

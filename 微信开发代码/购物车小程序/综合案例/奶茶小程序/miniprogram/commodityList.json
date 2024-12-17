@@ -1,0 +1,163 @@
+{
+	"id": 0,
+	"title": "热销榜",
+	"project": [{
+		"id": 0,
+		"img_url": "cloud://album-be3f26.616c-album-be3f26-1258995045/naigai01.jpeg",
+		"title": "奶盖奶茶",
+		"info": "大杯/常规/温热/正常糖",
+		"price": 12
+	}, {
+		"id": 1,
+		"img_url": "cloud://album-be3f26.616c-album-be3f26-1258995045/naigai02.jpeg",
+		"title": "浓浓巧克力",
+		"info": "中杯/常规/温热/三分糖",
+		"price": 15
+	}, {
+		"id": 2,
+		"img_url": "cloud://album-be3f26.616c-album-be3f26-1258995045/shuiguonaica03.jpeg",
+		"title": "经典三兄弟",
+		"info": "大杯/常规/加冰/正常糖",
+		"price": 11
+	}, {
+		"id": 3,
+		"img_url": "cloud://album-be3f26.616c-album-be3f26-1258995045/shuiguonaica04.jpeg",
+		"title": "草莓多多",
+		"info": "中杯/常规/加冰/去糖",
+		"price": 18
+	}]
+}
+{
+	"id": 1,
+	"title": "珍珠奶茶",
+	"project": [{
+		"id": 0,
+		"img_url": "cloud://album-be3f26.616c-album-be3f26-1258995045/zhenzhunaica01.jpeg",
+		"title": "经典口味",
+		"info": "大杯/常规/加冰/正常糖",
+		"price": 12
+	}, {
+		"id": 1,
+		"img_url": "cloud://album-be3f26.616c-album-be3f26-1258995045/zhenzhunaica02.jpg",
+		"title": "丝袜奶茶",
+		"info": "中杯/常规/加冰/正常糖",
+		"price": 8
+	}, {
+		"id": 2,
+		"img_url": "cloud://album-be3f26.616c-album-be3f26-1258995045/zhenzhunaica03.jpg",
+		"title": "情侣杯装",
+		"info": "大杯/常规/加冰/正常糖",
+		"price": 50
+	}, {
+		"id": 3,
+		"img_url": "cloud://album-be3f26.616c-album-be3f26-1258995045/zhenzhunaica04.jpg",
+		"title": "好基友奶茶",
+		"info": "中杯/常规/加冰/正常糖",
+		"price": 30
+	}, {
+		"id": 4,
+		"img_url": "cloud://album-be3f26.616c-album-be3f26-1258995045/zhenzhunaica01.jpeg",
+		"title": "经典口味",
+		"info": "大杯/常规/加冰/正常糖",
+		"price": 12
+	}, {
+		"id": 5,
+		"img_url": "cloud://album-be3f26.616c-album-be3f26-1258995045/zhenzhunaica02.jpg",
+		"title": "丝袜奶茶",
+		"info": "中杯/常规/加冰/正常糖",
+		"price": 8
+	}, {
+		"id": 6,
+		"img_url": "cloud://album-be3f26.616c-album-be3f26-1258995045/zhenzhunaica03.jpg",
+		"title": "情侣杯装",
+		"info": "大杯/常规/加冰/正常糖",
+		"price": 50
+	}, {
+		"id": 7,
+		"img_url": "cloud://album-be3f26.616c-album-be3f26-1258995045/zhenzhunaica04.jpg",
+		"title": "好基友奶茶",
+		"info": "中杯/常规/加冰/正常糖",
+		"price": 30
+	}]
+}
+{
+	"id": 2,
+	"title": "水果茶",
+	"project": [{
+		"id": 0,
+		"img_url": "cloud://album-be3f26.616c-album-be3f26-1258995045/shuiguonaica01.jpg",
+		"title": "水果大爆炸",
+		"info": "大杯/常规/温热/正常糖",
+		"price": 12
+	}, {
+		"id": 1,
+		"img_url": "cloud://album-be3f26.616c-album-be3f26-1258995045/shuiguonaica02.jpeg",
+		"title": "草莓多多",
+		"info": "大杯/常规/温热/正常糖",
+		"price": 12
+	}, {
+		"id": 2,
+		"img_url": "cloud://album-be3f26.616c-album-be3f26-1258995045/shuiguonaica01.jpg",
+		"title": "水果大爆炸",
+		"info": "大杯/常规/温热/正常糖",
+		"price": 12
+	}, {
+		"id": 3,
+		"img_url": "cloud://album-be3f26.616c-album-be3f26-1258995045/shuiguonaica02.jpeg",
+		"title": "草莓多多",
+		"info": "大杯/常规/温热/正常糖",
+		"price": 12
+	}]
+}
+{
+	"id": 3,
+	"title": "奶盖",
+	"project": [{
+		"id": 0,
+		"img_url": "cloud://album-be3f26.616c-album-be3f26-1258995045/naigai01.jpeg",
+		"title": "夺命大乌苏",
+		"info": "大杯/常规/温热/正常糖",
+		"price": 12
+	}, {
+		"id": 1,
+		"img_url": "cloud://album-be3f26.616c-album-be3f26-1258995045/naigai02.jpeg",
+		"title": "四季春奶盖",
+		"info": "大杯/常规/温热/正常糖",
+		"price": 12
+	}]
+}
+{
+	"id": 4,
+	"title": "小吃零食",
+	"project": [{
+		"id": 0,
+		"img_url": "cloud://album-be3f26.616c-album-be3f26-1258995045/linshi01.jpeg",
+		"title": "怪味胡豆",
+		"info": "袋装",
+		"price": 5
+	}, {
+		"id": 1,
+		"img_url": "cloud://album-be3f26.616c-album-be3f26-1258995045/linshi04.jpeg",
+		"title": "香辣花生",
+		"info": "袋装",
+		"price": 5
+	}, {
+		"id": 2,
+		"img_url": "cloud://album-be3f26.616c-album-be3f26-1258995045/linshi06.jpeg",
+		"title": "香脆薯片",
+		"info": "袋装",
+		"price": 5
+	}, {
+		"id": 3,
+		"img_url": "cloud://album-be3f26.616c-album-be3f26-1258995045/linshi02.jpeg",
+		"title": "美味花生酥",
+		"info": "袋装",
+		"price": 8
+	}, {
+		"id": 4,
+		"img_url": "cloud://album-be3f26.616c-album-be3f26-1258995045/linshi03.jpeg",
+		"title": "五香牛肉",
+		"info": "袋装",
+		"price": 20
+	}]
+}

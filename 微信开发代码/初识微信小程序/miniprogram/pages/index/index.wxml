@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="container">
+
+  {{text}}
+  <button bindtap="buttontap">改变text的内容</button>
+
+</view>

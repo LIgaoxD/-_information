@@ -1,0 +1,12 @@
+{
+  "pages": [
+		"pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "校园新闻网",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}

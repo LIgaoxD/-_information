@@ -1,0 +1,4 @@
+input{
+	height: 35px;
+	background-color: #eee;
+}

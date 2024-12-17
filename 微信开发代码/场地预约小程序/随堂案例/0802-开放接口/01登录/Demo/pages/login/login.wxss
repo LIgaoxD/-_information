@@ -1,0 +1,23 @@
+input{
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #ccc;
+	box-sizing: border-box;
+}
+.title{
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.box{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	height: 40px;
+	line-height: 40px;
+}
+button{
+	margin: 10px;
+}

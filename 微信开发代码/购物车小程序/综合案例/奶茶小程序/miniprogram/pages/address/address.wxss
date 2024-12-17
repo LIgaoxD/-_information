@@ -1,0 +1,77 @@
+.address_box{
+  width: 96%;
+  margin: 0 auto;
+  display: block;
+}
+.address_item{
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  border-bottom: 1px solid rgba(100,100,100,.2);
+  padding: 15px 0;
+}
+.address_check_box{
+  width: 10%;
+}
+.address_check_btn{
+  transform: scale(.8);
+}
+.address_info{
+  width: 82%;
+}
+.address_info_detail{
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+.address_info_box{
+  display: flex;
+}
+.address_info_name,
+.address_info_phone{
+  font-size: 15px;
+  color: #666;
+}
+.address_info_name{
+  margin-left: 10px;
+}
+.address_delete{
+  width: 8%;
+  height: 27px;
+  background: #666;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 5px;
+}
+.address_delete image{
+  width: 16px;
+  height: 16px;
+}
+
+.add_newAddress_box{
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+}
+.add_newAddress_btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 40px;
+  border: 1px solid;
+}
+.add_newAddress_btn>image{
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+.add_newAddress_btn>text{
+  font-size: 16px;
+}

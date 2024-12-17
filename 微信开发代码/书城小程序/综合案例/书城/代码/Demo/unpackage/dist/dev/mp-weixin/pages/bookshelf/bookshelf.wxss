@@ -1,0 +1,39 @@
+
+.box.data-v-59858e6c{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	padding:40px 10px;
+}
+.item.data-v-59858e6c{
+	margin:1%;
+	width: 31%;
+}
+image.data-v-59858e6c{
+	width:30vw;
+	height:30vw;
+}
+.item-name.data-v-59858e6c{
+	text-align: center;
+	margin:0 auto;
+}
+.add-box.data-v-59858e6c{
+	margin:2% 5% 10% 5%;
+	width: 23%;
+	background-color: #eee;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.add.data-v-59858e6c{
+	color: #007AFF;
+}
+

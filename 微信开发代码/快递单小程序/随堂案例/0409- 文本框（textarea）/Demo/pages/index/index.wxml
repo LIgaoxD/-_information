@@ -1,0 +1,11 @@
+<view>
+	<view class="title">个人介绍</view>
+	<textarea 
+	placeholder="请输入...." 
+	value="" 
+	name=""  
+	id="" 
+	maxlength="-1" 
+	auto-height="true" >
+	</textarea>
+</view>

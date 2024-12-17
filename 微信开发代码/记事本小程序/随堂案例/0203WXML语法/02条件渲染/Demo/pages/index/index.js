@@ -1,0 +1,16 @@
+Page({
+	data:{
+		num:0,
+		show:true
+	},
+	change:function(){
+		this.setData({
+			show:!this.data.show
+		})
+	},
+	getInput:function(e){
+		this.setData({
+			num:e.detail.value
+		})
+	}
+})

@@ -1,0 +1,64 @@
+<view>
+	<!-- 分类栏 -->
+	<view id="nav" class="nav">
+		<view class="nav-item active">新闻</view>
+		<view class="nav-item">视频</view>
+		<view class="nav-item">报刊</view>
+		<view class="nav-item">广播</view>
+	</view>
+	<scroll-view scroll-y="true" style="height: {{windowHeight}}px;" scroll-into-view="{{scrollIntoId}}">
+		<!-- 轮播图 -->
+		<view id='top'>
+			<swiper autoplay="true" class="swiper" indicator-dots="true" circular="true">
+				<block wx:for="{{imgArr}}" wx:key="*this">
+					<swiper-item>
+						<image class="swiper-img" mode="aspectFill" src="{{item.src}}"></image>
+					</swiper-item>
+				</block>
+			</swiper>
+		</view>
+		<!-- 新闻列表 -->
+		<view class="news-box">
+			<view wx:for="{{newsArr}}" wx:key="*this" class="news-item">
+				<!-- 新闻列表布局1 -->
+				<block wx:if="{{item.type==1}}">
+					<view class="type1-left">
+						<view class="type1-title">{{item.title}}</view>
+						<view class="type1-info-box">
+							<view class="type1-info">
+								{{item.author}}
+							</view>
+							<view class="type1-info">{{item.time}}</view>
+						</view>
+					</view>
+					<view class="type1-right">
+						<image class="type1-img" mode="aspectFill" src="{{item.image}}"></image>
+					</view>
+				</block>
+				<!-- 新闻列表布局2 -->
+				<block wx:else>
+					<view class="type2-left">
+						<image class="type2-img" mode="aspectFill" src="{{item.image}}"></image>
+					</view>
+					<view class="type2-right">
+						<view class="type2-title">{{item.title}}</view>
+						<view class="type2-info-box">
+							<view class="type2-info">
+								{{item.author}}
+							</view>
+							<view class="type2-info">{{item.time}}</view>
+						</view>
+					</view>
+				</block>
+			</view>
+		</view>
+	</scroll-view>
+	<!-- 悬浮按钮 -->
+	<view class="back-top" bindtap="backTop">
+		回到顶部
+	</view>
+</view>
+
+
+
+

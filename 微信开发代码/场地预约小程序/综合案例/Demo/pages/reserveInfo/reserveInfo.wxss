@@ -1,0 +1,26 @@
+/* pages/reserveInfo/reserveInfo.wxss */
+.title{
+	text-align: center;
+	font-size:25px ;
+	font-weight: bold;
+	margin:10px;
+}
+.radio{
+	margin: 5px;
+}
+.box{
+	display: flex;
+	height: 50px;
+	margin:5px;
+	background-color: #fff;
+	font-size: 20px;
+	align-items: center;
+	padding:0 5px;
+}
+.box-name{
+	width: 120px;
+}
+.btn{
+	width: 50%;
+	margin:20px auto;
+}

@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "navigationBarTitleText": "快递寄件",
+    "navigationBarTextStyle":"black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

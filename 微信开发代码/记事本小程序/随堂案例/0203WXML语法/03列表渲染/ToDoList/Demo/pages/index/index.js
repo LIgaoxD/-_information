@@ -1,0 +1,21 @@
+Page({
+	data:{
+		array:[],
+		inputData:''//初始化输入框的值
+	},
+	getInput:function(e){
+		//输入框内容发生改变后修改inputData，实现数据双向绑定
+		this.setData({
+			inputData:e.detail.value
+		})
+	},
+	add:function(){
+		//点击添加按钮后将当前输入框中的值添加至array，并重置输入框为空
+		let arr=this.data.array;
+		arr.push(this.data.inputData);
+		this.setData({
+			array:arr,
+			inputData:''
+		})
+	}
+})

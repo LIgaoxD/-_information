@@ -1,0 +1,12 @@
+<!-- 缓存 -->
+<view >
+	<view wx:if="{{loginState}}" class="title">
+		尊敬的用户，欢迎回来
+	</view>
+	<view wx:else class="title">
+		<navigator url="/pages/login/login" hover-class="navigator-hover">请登录</navigator>
+	</view>
+  <text>用户昵称:{{nickname}}</text>
+	<view></view>
+	<text>用户appId：{{appId}}</text>
+</view>

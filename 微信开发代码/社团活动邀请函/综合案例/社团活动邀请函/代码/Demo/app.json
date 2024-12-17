@@ -1,0 +1,56 @@
+{
+	"pages": [
+		"pages/index/index",
+		"pages/picture/picture",
+		"pages/video/video",
+		"pages/map/map",
+		"pages/guest/guest"
+	],
+	"requiredBackgroundModes": [
+		"audio"
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "社团活动邀请函",
+		"navigationBarTextStyle": "black"
+	},
+	"sitemapLocation": "sitemap.json",
+	"tabBar": {
+		"color": "#ccc",
+		"selectedColor": "#472d56",
+		"borderStyle": "white",
+		"backgroundColor": "#fff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "images/tab/index.png",
+				"selectedIconPath": "images/tab/selected_index.png",
+				"text": "邀请函"
+			},
+			{
+				"pagePath": "pages/picture/picture",
+				"iconPath": "images/tab/picture.png",
+				"selectedIconPath": "images/tab/selected_picture.png",
+				"text": "照片"
+			},
+			{
+				"pagePath": "pages/video/video",
+				"iconPath": "images/tab/video.png",
+				"selectedIconPath": "images/tab/selected_video.png",
+				"text": "视频"
+			},
+			{
+				"pagePath": "pages/map/map",
+				"iconPath": "images/tab/map.png",
+				"selectedIconPath": "images/tab/selected_map.png",
+				"text": "地址"
+			},
+			{
+				"pagePath": "pages/guest/guest",
+				"iconPath": "images/tab/guest.png",
+				"selectedIconPath": "images/tab/selected_guest.png",
+				"text": "信息"
+			}
+		]
+	}
+}

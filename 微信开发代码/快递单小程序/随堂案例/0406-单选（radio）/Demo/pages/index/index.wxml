@@ -1,0 +1,11 @@
+<view class="page-section">
+	<view class="page-section-title">选择性别</view>
+	<radio-group bindchange="change">
+		<label class="radio">
+			<radio value="r1" checked="{{show}}" />男
+		</label>
+		<label class="radio">
+			<radio value="r2" checked="{{!show}}"/>女
+		</label>
+	</radio-group>
+</view>

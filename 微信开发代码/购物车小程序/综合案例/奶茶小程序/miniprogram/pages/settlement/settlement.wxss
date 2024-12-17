@@ -1,0 +1,142 @@
+.topBg{
+  display: block;
+  width: 100%;
+}
+.bill_con{
+  min-height: 400px;
+  background: #f8f8f8;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0 -10px 40px 20px #f8f8f8;
+  position: relative;
+  top: -110px;
+  padding: 20px 13px 0 13px;
+}
+.selected_box{
+  display: flex;
+  justify-content: center;
+  margin: 0 0 13px 0;
+}
+.selected_address{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  border: 1px solid rgba(100,100,100,.8);
+  padding: 6px 15px;
+}
+.selected_address image{
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+.selected_address text{
+  margin-left: 5px;
+  color: rgb(100, 100, 100);
+}
+.address_con{
+  margin-bottom: 13px;
+  padding: 13px 0;
+  border-bottom: 1px solid rgba(100,100,100,.2);
+}
+.address_con_detail{
+  font-weight: bold;
+}
+.address_con_info{
+  color: #666;
+}
+.address_con_info>text{
+  font-size: 14px;
+  margin-top: 6px;
+}
+.address_con_info>text:nth-child(1){margin-right: 10px;}
+
+.service_time{
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  align-items: center;
+}
+.service_time>text:nth-child(2){
+  color: #666;
+}
+
+.item_title{
+  border-bottom: 1px solid rgba(100,100,100,.2);
+  display: flex;
+}
+.item_title>text{
+  display: block;
+  padding: 6px 10px;
+  background: #f6d000;
+  color: #fff;
+}
+
+.item{
+  display: flex;
+  align-items: center;
+  margin: 13px 0;
+}
+.item_img{
+  display: block;
+  width: 20%;
+  height: 80px;
+}
+.item_con{
+  width: 70%;
+  padding-left: 10px;
+}
+.item_con_title{
+  font-size: 18px;
+}
+.item_con_info{
+  color: #666;
+  margin-top: 6px;
+  font-size: 15px;
+}
+.item_con_number{
+  font-size: 14px;
+  color: #666;
+}
+.item_con_number>text:nth-child(2){
+  font-size: 16px;
+}
+.item_price{
+  font-size: 14px;
+}
+.item_price>text:nth-child(2){
+  margin-left: 2.5px;
+  font-size: 18px;
+}
+.pay_total_price{
+  text-align: right;
+  font-size: 18px;
+  color: #f00;
+}
+.pay_total_price_number{
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.pay_btn_con{
+  overflow: hidden;
+  border-top: 1px solid rgba(100,100,100,.2);
+}
+.pay_btn{
+  float: right;
+  padding: 0 14px;
+  background: #f00;
+  color: #fff;
+  border-radius: 0;
+}
+
+.finish_btn{
+  display: block;
+  border: 1px solid rgb(67, 67, 218);
+  color: rgb(67, 67, 218);
+  font-size: 14px;
+  border-radius: 10px;
+  width: 120px;
+  padding: 5px 0;
+  text-align: center;
+  margin: 40px auto 0;
+}

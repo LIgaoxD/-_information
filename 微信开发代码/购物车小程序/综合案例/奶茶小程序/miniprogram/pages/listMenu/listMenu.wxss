@@ -1,0 +1,116 @@
+/* pages/listMenu/listMenu.wxss */
+.content{
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f8f8f8;
+}
+.left{
+  width: 25%;
+  font-size: 15px;
+  height: 100%;
+  /* border-right: 1px solid #dddbdb; */
+  background-color: #fff;
+}
+.left view{
+  text-align: center;
+  height: 45px;
+  line-height: 45px;
+}
+.select{
+  background-color: #f8f8f8;
+  font-weight: bold;
+  color: #ffd600;
+}
+.normal{
+  border-bottom: 1px solid #f2f2f2;
+}
+.right{
+  width: 75%;
+  margin: 10px;
+}
+.item-title{
+  font-size: 14px;
+  padding-left: 10px;
+  border-left: 1px solid #ffd600;
+  color: rgb(53, 52, 52);
+}
+.item{
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0;
+  background-color: #fff;
+  border-radius: 3px;
+  margin: 16px 0;
+}
+.icon{
+  margin-left: 10px;
+}
+.icon>image{
+  display: block;
+  width: 120px;
+  height: 120px;
+}
+.info{
+  width: 80%;
+}
+.name{
+  font-size: 18px;
+  text-align: right;
+  color: rgb(51, 51, 51);
+  padding: 0 10px;
+}
+.priceInfo{
+  padding: 5px 10px;
+  text-align: right;
+  font-size: 14px;
+}
+.infoText{
+  font-size: 13px;
+  color: #777;
+  margin: 5px 0;
+}
+.price{
+  font-size: 16px;
+  color: rgb(63, 62, 62);
+}
+.count{
+  color: #8a8a8a;
+  float: right;
+  margin: 10px 0 0 0;
+  font-size: 28px;
+  padding: 0 0 0 10px;
+  height: 30px;
+  line-height: 26px;
+  color: #ffd600;
+}
+.carBtn{
+  width: 50px;
+  height: 50px;
+  background-color: #ffd600;
+  border-radius: 50%;
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, .08);
+  box-sizing: border-box;
+  padding: 10px;
+}
+.carBtn>image{
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+.carBtn>text{
+  position: absolute;
+  right: -2px;
+  top: -5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #f00;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+}

@@ -1,0 +1,12 @@
+<!-- 条件渲染 -->
+<view>
+	<view wx:if="{{show}}" class="redBox"></view>
+	<view wx:else class="blueBox"></view>
+	<button bindtap="change">切换</button>
+</view>
+<view>
+	num的值：<input type="number" bindinput="getInput" value="0"/>
+	<view wx:if="{{num>10}}"> 大于10 </view>
+	<view wx:elif="{{num<2}}"> 小于2 </view>
+	<view wx:else> 2~10之间（包含2和10）</view>
+</view>

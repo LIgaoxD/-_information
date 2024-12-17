@@ -1,0 +1,149 @@
+/* pages/shoppingCart/shoppingCart.wxss */
+.shoppingCarTitle {
+    overflow: hidden;
+    padding: 0 16px;
+}
+
+.shoppingCarTitle>view {
+    display: inline-block;
+}
+
+.shoppingCarTitle>view:nth-child(1) {
+    font-size: 18px;
+}
+
+.shoppingCarTitle>view:nth-child(2) {
+    font-size: 12px;
+    background: #f6d000;
+    color: #fff;
+    border-radius: 3px;
+    padding: 0 2px;
+    display: inline-block;
+    margin-left: 3px;
+}
+
+.item{
+    width: 95%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgba(100, 100, 100, .2);
+    margin: 10px auto;
+}
+.item_check_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item_info_box{
+    display: flex;
+    align-items: center;
+}
+.item_info_img{
+    width: 70px;
+    height: 70px;
+    display: block;
+}
+.item_info{
+    margin-left: 5px;
+}
+.item_info_title{
+    font-size: 18px;
+}
+.item_info_info{
+    font-size: 12px;
+    margin-bottom: 6px;
+    color: #666666;
+}
+.item_info_price{
+    color: #f00;
+}
+.item_info_number{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.item_info_number_reduce,
+.item_info_number_add{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+}
+.item_info_delete{
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
+.item_info_delete image{
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 0 0 0 -12px;
+}
+
+.item_info_numer_text{
+    width: 30px;
+    text-align: center;
+}
+
+
+.bottom_box {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+}
+
+.settlement_box {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    height: 50px;
+    background: #fff;
+    line-height: 50px;
+}
+
+.settlement_check {
+    font-size: 14px;
+    margin-left: 16px;
+}
+
+.settlement_check_btn {
+    width: 26px;
+    height: 26px;
+    transform: scale(.82);
+}
+
+.settlement_btn_box {
+    display: flex;
+    flex-direction: row;
+}
+
+.settlement_price {
+    color: #f00;
+    font-size: 14px;
+}
+
+.settlement_price>text {
+    display: inline-block;
+    margin: 0 2px;
+    font-size: 19px;
+}
+
+.settlement_btn {
+    width: 140px;
+    background: #f00;
+    color: #fff;
+    margin: 0 0 0 5px;
+    padding: 0;
+    line-height: 50px;
+    border-radius: 0;
+}

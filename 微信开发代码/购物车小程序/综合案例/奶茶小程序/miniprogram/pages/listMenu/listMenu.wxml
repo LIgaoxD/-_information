@@ -1,0 +1,49 @@
+<view class="content">
+  <view class="left">
+    <block wx:for="{{project_list}}" wx:key="normal">
+      <view class="{{flag == item.id?'select':'normal'}}" id="{{item.id}}" bindtap="switchNav">{{item.title}}</view>
+    </block>
+  </view>
+  <view class="right">
+    <view class="category">
+      <swiper
+        current="{{currentTab}}"
+        vertical="true"
+        style="height: {{height}}px"
+        bindchange="changeIndex"
+      >
+        <block wx:for="{{project_list}}" wx:key="normal">
+          <swiper-item>
+            <view class="item-title">{{item.title}}</view>
+            <scroll-view style="height: 100%;" scroll-y>
+              <view class="item" wx:for="{{item.project}}" wx:for-item="itemProject" wx:key="normal">
+                <view class="icon">
+                  <image src="{{itemProject.img_url}}"></image>
+                </view>
+                <view class="info">
+                  <view class="name">{{itemProject.title}}</view>
+                  <view class="priceInfo">
+                    <view class="infoText">{{itemProject.info}}</view>
+                    <view class="price">
+                      ¥<text>{{itemProject.price}}</text> 
+                    </view>
+                    <view
+                      class="count"
+                      data-firstIndex="{{item.id}}"
+                      data-lastIndex="{{itemProject.id}}"
+                      bindtap="getNumberIndex"
+                    >+</view>
+                  </view>
+                </view>
+              </view>
+            </scroll-view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+  <view class="carBtn" bindtap="goCar">
+    <image src="../../images/car-icon.png"></image>
+    <text>{{car_list_number}}</text>
+  </view>
+</view>

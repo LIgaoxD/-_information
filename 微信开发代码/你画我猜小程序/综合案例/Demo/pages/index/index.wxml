@@ -1,0 +1,32 @@
+<view class="container">
+	<!-- 题目 -->
+	<view class="question">
+		<text>题目: {{answer}}</text>
+	</view>
+	<!-- 画板 -->
+	<view class="palette" style="{{'height:'+ windowWidth+'px;'}}">
+		<canvas 
+		canvas-id = "firstCanvas" 
+		disable-scroll = "true" 
+		bindtouchstart = "touchStart" 
+		bindtouchmove = "touchMove" 
+		bindtouchend = "touchEnd">
+		</canvas>
+	</view>
+	<!-- 操作区 -->
+	<view class="option-panel">
+		<view class="option-row">
+			<block wx:for="{{avaliableColors}}" wx:key="*this">
+				<view class="color-btn" style="{{'background-color:'+item}}" bindtap="clickChangeColor" data-color="{{item}}"></view>
+			</block>
+		</view>
+		<view class="option-row">
+			<image class="operate-btn" bindtap="clickFallback" src="/images/icon/cancel.png"></image>
+			<image class="operate-btn" bindtap="clickErase" src="/images/icon/eraser.png"></image>
+			<image class="operate-btn" bindtap="clickClearAll" src="/images/icon/delete.png"></image>
+		</view>
+		<view class="option-row">
+			<button type="primary" class="share-btn" bindtap='clickShare'>发起猜猜看</button>
+		</view>
+	</view>
+</view>

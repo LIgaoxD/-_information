@@ -1,0 +1,14 @@
+Page({
+	handleTap1:function(){
+		console.log("handleTap1")
+	},
+	handleTap2:function(){
+		console.log("handleTap2")
+	},
+	handleTap3:function(){
+		console.log("handleTap3")
+	},
+	handleTap4:function(){
+		console.log("handleTap4")
+	},
+})

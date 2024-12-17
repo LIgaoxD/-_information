@@ -1,0 +1,31 @@
+var a = 10, b = 20;
+function fun (){
+	console.log("a = 10, b = 20");
+	// 加法运算
+	console.log( "a + b="+ (a+b));
+	// 减法运算
+	console.log("a-b="+ (a-b));
+	// 乘法运算
+	console.log("a*b="+ (a*b));
+	// 除法运算
+	console.log("a/b="+ (a/b));
+	// 取余运算
+	console.log("a%b="+ (a%b));
+	// 小于
+	console.log("a<b="+(a < b));
+	// 大于
+	console.log("a>b="+(a > b));
+	// 小于等于
+	console.log("a<=b="+(a <= b));
+	// 大于等于
+	console.log("a>=b="+(a >= b));
+	//等于
+	console.log("a=b="+(a===b));
+	// 自增运算
+	console.log("a+1="+(a++));
+	// 自减运算
+	console.log("a-1="+(a--));
+}
+module.exports ={
+	fun:fun
+}

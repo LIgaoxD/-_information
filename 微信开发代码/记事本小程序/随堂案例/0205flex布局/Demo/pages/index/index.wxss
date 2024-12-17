@@ -1,0 +1,42 @@
+.left-box{
+	width: 30%;
+	float: left;
+}
+.item-title{
+	text-align: center;
+	background-color: #000;
+	border:1px solid #fff;
+	box-sizing:border-box;
+	border-radius: 5px;
+	color:#ffcc33;
+	margin-top: 5px;
+}
+button{
+	width: 100%;
+	font-size: 10px;
+	background: #ccc;
+}
+.right-box{
+	width: 70%;
+	height:200px;
+	float: left;
+}
+.flex-box{
+	width: 100%;
+	height: 100%;
+	border:1px solid #000;
+	box-sizing:border-box;
+}
+.flex-box1{
+	width: 100%;
+	height: 100%;
+	border:1px solid #000;
+	box-sizing:border-box;
+	flex-wrap:wrap
+}
+.box{
+	width: 50px;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+}

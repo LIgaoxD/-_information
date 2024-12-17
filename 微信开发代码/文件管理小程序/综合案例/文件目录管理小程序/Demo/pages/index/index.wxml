@@ -1,0 +1,26 @@
+<!-- 文件api -->
+<view>
+	<view class="title">文件目录管理</view> <!-- 第一个外层view -->
+	<view><!-- 第二个外层view -->
+		<view>
+			需要操作的目录：
+			<input bindinput="changeInputValue" value="{{inputValue}}" type="text" />
+		</view>
+		<view>
+			需要操作的文件：<input bindinput="changeInputfileValue" value="{{inputfileValue}}" type="text" />
+		</view>
+		<view>
+			需要添加的内容：<input bindinput="changeInputContent" value="{{inputContent}}" type="text" />
+		</view>
+	</view>
+	<view><!-- 第三个外层view -->
+		<button bindtap="addDir">创建文件目录</button>
+		<button bindtap="rmDir">删除文件目录</button>
+		<button bindtap="getList">获取文件列表</button>
+		<button bindtap="getFileInfo">获取文件信息</button>
+		<button bindtap="readFile">读取文件内容</button>
+		<button bindtap="addFile">添加文件</button>
+		<button bindtap="writeFile">指定文件添加内容</button>
+	</view>
+	<view wx:for="{{list}}" wx:key="*this">{{item}}</view>
+</view>

@@ -1,0 +1,52 @@
+<view>
+	<!-- 申请场地类型 -->
+	<view class="title">{{name}}</view>
+	<!-- 表单内容 -->
+	<form bindsubmit="submit">
+		<view class="box">
+			<radio-group>
+				<label class="radio">
+					<radio value="r1" checked="true" />个人申请
+				</label>
+				<label class="radio">
+					<radio value="r2" />团体申请
+				</label>
+			</radio-group>
+		</view>
+		<view class="box">
+			<view class="box-name">姓名：</view>
+			<input type="text" name="name" placeholder="填写申请人或团体负责人" />
+		</view>
+		<view class="box">
+			<view class="box-name">班级/部门：</view>
+			<input type="text" name="class" placeholder="xx学院xx班/xx部门" />
+		</view>
+		<view class="box">
+			<view class="box-name">证件：</view>
+			<input type="text" name="certificates" placeholder="学生证号/教师证号" />
+		</view>
+		<view class="box">
+			<view class="box-name">联系电话</view>
+			<input type="text" name="phone" placeholder="填写联系人手机号" />
+		</view>
+		<view class="box">
+			<view class="box-name">申请日期：</view>
+			<picker mode="date" name="dateStart" value="{{dateStart}}" bindchange="dateStartChange">
+				<view class="picker">
+					{{dateStart}}
+				</view>
+			</picker>
+			至
+			<picker mode="date" name="dateEnd" value="{{dateEnd}}" start="{{dateStart}}" bindchange="dateEndChange">
+				<view class="picker">
+					{{dateEnd}}
+				</view>
+			</picker>
+		</view>
+		<view class="box">
+			<view class="box-name">场地用途</view>
+			<input type="text" name="explain" placeholder="填写说明" />
+		</view>
+		<button type="primary" class="btn" form-type="submit">提交</button>
+	</form>
+</view>

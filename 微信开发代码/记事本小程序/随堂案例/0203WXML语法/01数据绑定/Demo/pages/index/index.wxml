@@ -1,0 +1,5 @@
+<!-- 数据绑定 -->
+<view>
+	<view id="item-{{id}}">{{message}}</view>
+	<button bindtap="change">切换</button>
+</view>

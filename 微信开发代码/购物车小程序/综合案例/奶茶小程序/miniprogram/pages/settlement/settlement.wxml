@@ -1,0 +1,54 @@
+<image src="../../images/mapBg.png" class="topBg"></image>
+<view class="bill_con">
+  <!-- 选择按钮地址 -->
+  <view wx:if="{{!address_selected}}" class="selected_box">
+    <view class="selected_address" bindtap="selectAddress">
+      <image src="../../images/add.png"></image>
+      <text>点击添加地址</text>
+    </view>
+  </view>
+  <view wx:else>
+    <!-- 地址内容 -->
+    <view class="address_con">
+      <view class="address_con_detail">{{addressDetail.address}}</view>
+      <view class="address_con_info">
+        <text>{{addressDetail.name}}</text>
+        <text>{{addressDetail.userPhone}}</text>
+      </view>
+    </view>
+    <!-- 送达时间 -->
+    <view class="service_time">
+      <view>立即送出</view>
+      <view>大约25分钟后到达</view>
+    </view>
+  </view>
+  <!-- 账单信息标题 -->
+  <view class="item_title">
+    <text>账单列表</text>
+  </view>
+  <!-- 账单列表 -->
+  <view class="item" wx:for="{{commodityList}}" wx:key="normal">
+    <image class="item_img" src="{{item.img_url}}"></image>
+    <view class="item_con">
+      <view class="item_con_title">{{item.title}}</view>
+      <view class="item_con_info">{{item.info}}</view>
+      <view class="item_con_number">
+        <text>数量：</text>
+        <text>{{item.number}}</text>
+      </view>
+    </view>
+    <view class="item_price">
+      <text>¥</text>
+      <text>{{item.price}}</text>
+    </view>
+  </view>
+    <view class="pay_total_price">
+      <text>共计：</text>
+      <text class="pay_total_price_number">{{totalPrice}}</text>
+      <text>元</text>
+    </view>
+  <!-- 点击支付按钮 -->
+  <view class="pay_btn_con">
+    <button class="pay_btn" bindtap="payBtn">确认账单并支付</button>
+  </view>
+</view>

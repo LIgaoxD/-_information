@@ -1,0 +1,26 @@
+
+<view class="address_box">
+  <radio-group bindchange="checkAddress">
+    <view class="address_item" wx:for="{{address_list}}" wx:key="normal">
+      <view class="address_check_box">
+        <radio class="address_check_btn" value="{{item._id}}"/>
+      </view>
+      <view class="address_info">
+        <view class="address_info_detail">{{item.address}}</view>
+        <view class="address_info_box">
+          <view class="address_info_phone">{{item.phone}}</view>
+          <view class="address_info_name">{{item.name}}</view>
+        </view>
+      </view>
+      <view class="address_delete" data-index="{{item._id}}" bindtap="deleteItem">
+        <image src="../../images/Delete Item CC And M.png"></image>
+      </view>
+    </view>
+  </radio-group>
+</view>
+<view class="add_newAddress_box">
+  <view class="add_newAddress_btn" bindtap="goAddNewAddress">
+    <image src="../../images/add.png"></image>
+    <text>添加新地址</text>
+  </view>
+</view>

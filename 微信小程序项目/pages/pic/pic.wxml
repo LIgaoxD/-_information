@@ -1,0 +1,66 @@
+<!-- pages/index/index.wxml -->
+<scroll-view class="container" scroll-y="true">
+  <view class="top">
+    <text class="person-top" style="letter-spacing: 0.5rpx;">YG Entertainment ---BLɅϽKPIИK -- Jisoo - Jennie - Rosé - Lisa</text>
+  </view>
+
+  <view class="search-container">
+    <input class="search-input" placeholder="Search  Album " bindinput="onInput" bindfocus="onFocus" bindblur="onBlur" />
+    <!-- <button class="search-button" bindtap="onSearch">
+      <image class="search-icon" src="../../images/tab/se1.png"></image>
+    </button> -->
+    <button class="button"> <i class="icon-search"></i></button>
+   
+  </view>
+
+  <swiper class="swiper-container" indicator-dots="true" autoplay="true">
+    <swiper-item>
+      <image class="swiper-image" src="../../images/bg/u3.jpg" />
+    </swiper-item>
+    <swiper-item>
+      <image class="swiper-image" src="../../images/bg/u2.jpg" />
+    </swiper-item>
+    <swiper-item>
+      <image class="swiper-image" src="../../images/bg/u1.jpg" />
+    </swiper-item>
+  </swiper>
+
+  <view class="photo-wall">
+  <!-- 照片墙部分 -->
+  <view class="album-list">
+    <text class="album-text">Your Album List Here</text>
+  </view>
+  <block wx:for="{{photoList1}}" wx:key="index">
+    <view class="row">
+      <block wx:for="{{item}}" wx:key="index2">
+        <navigator url="../index/index">
+          <image class="photo1" src="{{item}}" />
+        </navigator>
+      </block>
+    </view>
+  </block>
+
+  <!-- 音乐会部分 -->
+  <view class="concert-list">
+    <text class="concert-text">Live Music Concert</text>
+  </view>
+  <block wx:for="{{photoList2}}" wx:key="index">
+    <view class="row">
+      <block wx:for="{{item}}" wx:key="index2">
+        <navigator url="../index/index">
+          <image class="photo2" src="{{item}}" />
+        </navigator>
+      </block>
+    </view>
+  </block>
+</view>
+
+  <view class="person-list">
+    <text class="person-text">Person's Introduction</text>
+  </view>
+
+  <view class="image-container">
+    <image class="extra-image" src="../../images/bg/s1.jpg" />
+  </view> 
+  
+</scroll-view>

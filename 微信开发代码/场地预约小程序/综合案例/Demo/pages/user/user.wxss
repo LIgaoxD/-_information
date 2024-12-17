@@ -1,0 +1,28 @@
+.user-info{
+	/* background-color: #fff; */
+	display: flex;
+	justify-content: center;
+	padding:50px;
+}
+.user-img{
+	width: 120px;
+	height: 120px;
+	border-radius:50%;
+	margin: 20 auto;
+}
+.box{
+	background-color: #fff;
+	padding:10px;
+	font-size: 20px;
+	color: #707070;
+	font-weight: bold;
+}
+.box-item{
+	display: flex;
+	align-items: center;
+}
+.box-img{
+	width: 30px;
+	height: 30px;
+	margin:10px;
+}

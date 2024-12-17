@@ -1,0 +1,36 @@
+Page({
+	data: {
+		schoolArray:["北京大学","上海交通大学","清华大学","复旦大学"],
+		school:'',
+		hobbyArray:[['打篮球', '踢足球', '打羽毛球', '轮滑', '健美操'], ['萨克斯', '小号','唢呐','长笛']],
+		hobby:'',
+		time:'',
+		date:"",
+		city:""
+	},
+	changeSchool:function(e){
+		this.setData({
+			school:this.data.schoolArray[e.detail.value]
+		})
+	},
+	changeHobby:function(e){
+		this.setData({
+			hobby:this.data.hobbyArray[0][e.detail.value[0]]+"、"+this.data.hobbyArray[1][e.detail.value[1]]
+		})
+	},
+	changeTime:function(e){
+		this.setData({
+			time:e.detail.value
+		})
+	},
+	changeDate:function(e){
+		this.setData({
+			date:e.detail.value
+		})
+	},
+	changeCity:function(e){
+		this.setData({
+			city:e.detail.value
+		})
+	}
+})

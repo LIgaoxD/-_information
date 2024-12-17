@@ -1,0 +1,1 @@
+<view class="content"><image class="logo" src="/static/logo.png"></image><view class="text-area"><button data-event-opts="{{[['tap',[['toOther',['$event']]]]]}}" bindtap="__e">跳转页面</button></view></view>

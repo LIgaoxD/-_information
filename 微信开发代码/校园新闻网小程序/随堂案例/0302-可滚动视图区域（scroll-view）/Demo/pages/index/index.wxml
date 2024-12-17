@@ -1,0 +1,12 @@
+<!-- scroll-view -->
+<view>
+	<!-- 添加可滚动区域、scroll-y设置容器纵向滚动、refresher-default-style="white"设置下拉刷新颜色、滚动到顶部提示用户 -->
+	<scroll-view class="scroll-box" scroll-y refresher-enabled="true" refresher-default-style="white" bindscrolltoupper="top">
+		<view class="viewBox">《木兰词·拟古决绝词柬友》</view>
+		<view class="viewBox">清·纳兰容若</view>
+		<view class="viewBox">人生若只如初见，何事秋风悲画扇。</view>
+		<view class="viewBox">等闲变却故人心，却道故人心易变。</view>
+		<view class="viewBox">骊山语罢清宵半，泪雨零铃终不怨。</view>
+		<view class="viewBox">何如薄幸锦衣郎，比翼连枝当日愿。</view>
+	</scroll-view>
+</view>

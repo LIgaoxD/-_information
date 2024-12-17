@@ -1,0 +1,10 @@
+<view class="login">
+	<view>
+		<image mode="aspectFill" src="../../images/swiper/img1.jpg"></image>
+	</view>
+	<!-- 用户信息授权 -->
+	<button open-type="getUserInfo" bindgetuserinfo="authorize" type="primary">用户信息授权</button>
+	<navigator url="/pages/index/index" open-type="switchTab">
+		<button>取消授权</button>
+	</navigator>
+</view>

@@ -1,0 +1,54 @@
+<view class="section">
+  <view class="section__title">省市区域选择</view>
+  <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+    <view class="picker">
+      当前选择：{{region[0]}}，{{region[1]}}，{{region[2]}}
+    </view>
+  </picker>
+</view>
+<view>
+  <view class="section__title">详细地址</view>
+  <textarea
+    id="detailAddress"
+    cols="30" 
+    rows="10" 
+    placeholder="请输入详细地址(例如小区名&门牌号)"
+    bindblur="detailAddress"
+    value="{{address}}"
+  ></textarea>
+</view>
+<view class="user_info">
+  <view class="user_info_name_box">
+    <view class="user_info_name">联系人</view>
+    <view class="user_info_name_input">
+      <input 
+        type="text" 
+        placeholder="输入姓名"
+        bindblur="userName"
+        value="{{user_name}}"
+      />
+    </view>
+  </view>
+  <view>
+    <radio-group bindchange="userGender" class="user_info_gender">
+      <view class="user_info_gender_item">
+        <radio id="man" value="男"></radio>
+        <label for="man">男</label>
+      </view>
+      <view  class="user_info_gender_item">
+        <radio id="woman" value="女"></radio>
+        <label for="woman">女</label>
+      </view>
+    </radio-group>
+  </view>
+</view>
+<view class="user_phone">
+  <view>手机号</view>
+  <input 
+    type="text" 
+    placeholder="请输入正确手机号"
+    bindblur="userPhone"
+    value="{{user_phone}}"
+  />
+</view>
+<button type="primary" class="preservation_btn" bindtap="preservation">保存地址</button>

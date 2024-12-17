@@ -1,0 +1,21 @@
+#textBox{
+  display: block;
+  width: 90%;
+  min-height: 200px;
+  margin: 20px auto 0;
+  border: 1px solid rgba(100,100,100,.1);
+  padding: 14px;
+}
+.submitBtn{
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  border-radius: 50%;
+  background: #fd6d00;
+  color: #fff;
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -40px;
+}

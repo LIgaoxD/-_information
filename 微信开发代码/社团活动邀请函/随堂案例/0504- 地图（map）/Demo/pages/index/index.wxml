@@ -1,0 +1,11 @@
+<view>
+	<view class="title">定位</view>
+	<map 
+	callouttap="{{longitude}}" 
+	latitude="{{latitude}}" 
+	markers="{{markers}}" 
+	scale="14"
+	></map>
+	<button bindtap="change1">天安门广场</button>
+	<button bindtap="change2">上海陆家嘴</button>
+</view>

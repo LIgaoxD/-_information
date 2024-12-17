@@ -1,0 +1,97 @@
+/* 分类栏 */
+.nav{
+	display: flex;
+	justify-content: space-around;
+	height:40px;
+	line-height: 40px;
+	font-size: 20px;
+	border-bottom:2px solid #aaa;
+	box-sizing: border-box;
+}
+.nav-item{
+	padding:0 20px;
+}
+.active{
+	border-bottom:3px solid #cc3300;
+}
+/* 轮播图 */
+.swiper{
+	width: 94%;
+	height: 200px;
+	margin:5px 3%;
+}
+.swiper-img{
+	width: 100%;
+	height: 200px;
+}
+/* 新闻列表 */
+.news-box{
+	margin-top:10px;
+}
+.news-item{
+	border-top:1px solid #aaa;
+	width: 90%;
+	margin:0px 5%;
+	padding:10px 0;
+	display: flex;
+	justify-content: start;
+}
+/* 新闻类别为1的样式 */
+.type1-left{
+	width: 60%;
+}
+.type1-right{
+	width: 150px;
+}
+.type1-img{
+	width: 150px;
+	height: 100px;
+	border-radius: 10px;
+}
+.type1-info-box{
+	display: flex;
+	justify-content: flex-start;
+	color: #aaa;
+	font-size: 13px;
+	margin-top:10px;
+}
+.type1-info{
+	margin-right:10px;
+}
+/* 新闻类别为2的样式 */
+.type2-left{
+	width: 150px;
+}
+.type2-right{
+	width: 60%;
+}
+.type2-img{
+	width: 150px;
+	height: 100px;
+	border-radius: 10px;
+}
+.type2-info-box{
+	display: flex;
+	justify-content: flex-start;
+	color: #aaa;
+	font-size: 13px;
+	margin-top:10px;
+}
+.type2-info{
+	margin-right:10px;
+}
+/* 悬浮按钮 */
+.back-top{
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	width:50px;
+	height: 50px;
+	line-height:50px;
+	text-align: center;
+	border-radius: 50%;
+	border:1px solid #888;
+	background-color: #fff;
+	font-size: 11px;
+	color: #888;
+}

@@ -1,0 +1,9 @@
+<!-- 列表渲染 -->
+<view>
+	<!-- 列表渲染 实现ToDoList-->
+	<view wx:for="{{array}}">
+		{{index}}: {{item}}
+	</view>
+	<input type="text" value="{{inputData}}" bindinput="getInput"/>
+	<button bindtap="add">添加</button>
+</view>

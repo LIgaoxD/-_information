@@ -1,0 +1,12 @@
+<view>
+	<view class="title">欢迎登陆</view>
+	<view class="box">
+		姓名：<input bindinput="setName" type="text"/>
+	</view>
+	<view class="box">
+		密码：<input bindinput="setPw" type="password"/>
+	</view>
+	<button type="primary" bindtap="login">
+		登录
+	</button>
+</view>

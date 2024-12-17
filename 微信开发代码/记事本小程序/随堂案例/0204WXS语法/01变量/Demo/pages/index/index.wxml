@@ -1,0 +1,5 @@
+<!-- WXS变量 -->
+<view>
+	<wxs src="./index.wxs" module="test"></wxs>
+	<button bindtap="{{test.fun}}">按钮</button>
+</view>

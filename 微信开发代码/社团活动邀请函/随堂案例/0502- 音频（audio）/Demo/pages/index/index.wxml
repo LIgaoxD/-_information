@@ -1,0 +1,16 @@
+<!-- audio -->
+<view>
+	<view class="title" >中国十大神曲</view>
+	<!-- 列表渲染 -->
+	<view wx:for="{{musicArray}}" class="section">
+		<audio 
+		id="{{item.id}}" 
+		src="{{item.musicSrc}}" 
+		poster="{{item.imgSrc}}" 
+		author="{{item.author}}" 
+		controls="true" 
+		name="{{item.name}}" 
+		bindplay="play" 
+		data-flag="{{item.id}}"></audio>
+	</view>
+</view>

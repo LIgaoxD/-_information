@@ -1,0 +1,16 @@
+.title{
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	margin:20px 0;
+}
+.box{
+	display: flex;
+	justify-items: auto;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.box>.inputtel{
+  border-bottom: 1px solid black;
+}

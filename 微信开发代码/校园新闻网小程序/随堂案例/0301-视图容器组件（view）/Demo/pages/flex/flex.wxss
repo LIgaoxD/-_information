@@ -1,0 +1,39 @@
+/* pages/flex/flex.wxss */
+.flex-wrp-row{
+  display: flex;
+  flex-direction: row;
+}
+.flex-item1{
+  flex: 1;
+  height: 100px;
+  background-color: red;
+}
+.flex-item2{
+  flex: 1;
+  height: 100px;
+  background-color:green;
+}
+.flex-item3{
+  flex: 1;
+  height: 100px;
+  background-color:blue;
+}
+.flex-wrp-column{
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 100%;
+}
+.flex-item-V1{
+  height: 100px;
+  background-color: red;
+}
+.flex-item-V2{
+  height: 100px;
+  background-color:green;
+}
+.flex-item-V3{
+  height: 100px;
+  background-color:blue;
+}
+

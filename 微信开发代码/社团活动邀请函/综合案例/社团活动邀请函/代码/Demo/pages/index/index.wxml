@@ -1,0 +1,15 @@
+<view>
+<!-- 背景图片 -->
+	<image class="bg" src="../../images/bg/bg.jpg"></image>
+	<!-- 内容区 -->
+	<view class="content">
+		<view class="content-title">邀请函</view>
+		<view class="info">
+			<view>亲爱的社员</view>
+			<view>真挚的邀请您参加我们的社团活动</view>
+			<view>时间:2021年5月20日</view>
+			<view>地点:辽宁省大连市XX路XX酒店</view>
+			<view style="text-align: right;margin-top:20px">-------疯狂舞者轮滑社</view>
+		</view>
+	</view>
+</view>

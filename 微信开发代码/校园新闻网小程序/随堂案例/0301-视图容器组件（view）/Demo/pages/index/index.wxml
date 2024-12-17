@@ -1,0 +1,12 @@
+<!-- view -->
+<view class="box" hover-class="change1">
+	点击改变样式
+</view>
+<view class="box" hover-class="change2">
+	<view class="child" hover-stop-propagation="true">
+		点击白色区域不会触发状态改变
+	</view>
+</view>
+<view class="box"  hover-class="change3" hover-start-time="5000" hover-stay-time="4000">
+	按住五秒后出现点击状态，并且松开4秒后点击状态消失.
+</view>

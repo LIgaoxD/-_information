@@ -1,0 +1,1 @@
+<view class="content"><block wx:for="{{iconType}}" wx:for-item="value" wx:for-index="index" wx:key="index"><view class="item"><icon type="{{value}}" size="26"></icon><text>{{value}}</text></view></block></view>

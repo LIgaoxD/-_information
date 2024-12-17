@@ -1,0 +1,53 @@
+{
+	"pages": [
+    "pages/index/index",
+    "pages/song/song", 
+		"pages/pic/pic",
+    "pages/player/player",
+    "pages/singer-detail/singer-detail",
+    "pages/top-list/top-list"
+	],
+	"requiredBackgroundModes": [
+		"audio"
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "BORN Music",
+		"navigationBarTextStyle": "black"
+	},
+	"sitemapLocation": "sitemap.json",
+	"tabBar": {
+		"color": "#ccc",
+		"selectedColor": "#472d56",
+		"borderStyle": "white",
+		"backgroundColor": "#fff",
+		"list": [
+      {
+				"pagePath": "pages/index/index",
+				"iconPath": "images/tab/x1.png",
+				"selectedIconPath": "images/tab/x2.png",
+				"text": "Ins"
+			},
+      {
+				"pagePath": "pages/song/song",
+				"iconPath": "images/tab/m1.png",
+				"selectedIconPath": "images/tab/m2.png",
+				"text": "Music推荐"
+      },
+			{
+				"pagePath": "pages/player/player",
+				"iconPath": "images/tab/v1.png",
+				"selectedIconPath": "images/tab/v2.png",
+				"text": "Video播放"
+			}, 
+			{ 
+				"pagePath": "pages/pic/pic",
+				"iconPath": "images/tab/p1.png",
+				"selectedIconPath": "images/tab/p2.png",
+				"text": "BLINK专场"
+			}
+
+		]
+	}
+}

@@ -1,0 +1,8 @@
+<view>
+	<!-- 轮播图 -->
+	<swiper class="swiper" vertical="true" indicator-dots="true" indicator-active-color="#ff4c91">
+		<swiper-item class="swiper" wx:for="{{arr}}" wx:key="*this">
+			<image mode="aspectFit" class="img" src="{{item.src}}"></image>
+		</swiper-item>
+	</swiper>
+</view>

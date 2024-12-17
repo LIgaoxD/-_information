@@ -1,0 +1,21 @@
+<!-- 添加轮播效果、设置指示点可见、动态绑定是否自动切换、动态绑定同时展示滑块数 -->
+<swiper indicator-dots="true" indicator-active-color="#333" autoplay="{{autoplay}}" duration="500" circular="true" display-multiple-items="{{num}}">
+	<swiper-item class="swiperItem">
+		<image src="/images/lion.jpg"></image>
+	</swiper-item>
+	<swiper-item class="swiperItem">
+		<image src="/images/panda.jpg"></image>
+	</swiper-item>
+	<swiper-item class="swiperItem">
+		<image src="/images/cat.jpg"></image>
+	</swiper-item>
+</swiper>
+<!-- 添加开关控制轮播是否自动切换 -->
+<view >
+	<switch  bindchange="changeAutoplay" />
+	<view>开启自动切换</view>
+</view>
+<view >
+	<switch  bindchange="changeNum" />
+	<view>同时展示两个滑块</view>
+</view>

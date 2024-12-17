@@ -1,0 +1,183 @@
+/* pages/index/index.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  margin-top: 2px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 14%;
+  margin-bottom: 8px;
+  margin-top: 6px;
+}
+
+.search-input {
+  width: 266px;
+  height: 24px;
+  border: none;
+  border-radius: 12px;
+  padding: 0 18px;
+  font: oblique bold 12px 黑体;
+  /* background-color: rgb(235,235,235); */
+  box-shadow: 2px 2px 8px rgb(216, 114, 114);
+  transition: background-color 0.6s, box-shadow 0.4s, width 0.4s;
+}
+.button{
+  margin-left: 4px;
+  background-color: rgb(29, 3, 15);
+}
+
+.swiper-container {
+  width: 100%;
+  height: 280px; /* 修改为适当的高度 */
+}
+
+.swiper-image {
+  width: 100%;
+  height: 100%;
+}
+
+.photo-wall {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  /* margin-bottom: 24px; */
+}
+
+.photo1 {
+  width: 200px; /* 修改为适当的宽度 */
+  height: 200px; /* 修改为适当的高度 */
+  margin: 6px 12px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.photo2 {
+  width: 142px; /* 修改为适当的宽度 */
+  height: 160px; /* 修改为适当的高度 */
+  /* margin: 12px; */
+  object-fit: cover;
+}
+.album-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px; 
+  /* background-color: rgb(212, 170, 170); */
+  border-radius: 6px;
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+
+.album-text {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 24px 36px 0px 36px;
+  background-color: pink;
+  /* background: linear-gradient(to right, black, black); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Songti, "华文新魏", sans-serif;
+  /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2), 0 0 10px pink;
+  animation: shake 5s infinite; */
+}
+/* @keyframes shake {
+  0% {
+    color: pink;
+  }
+  50% {
+    color: black;
+    text-shadow: 2px 2px 4px pink;
+  }
+  100% {
+    color: black;
+  }
+} */
+.concert-list {
+  display: flex;
+  justify-content: center;
+  /* background-color: rgb(212, 170, 170); */
+  border-radius: 12px;
+  margin-top: 36px;
+  margin-bottom: 12px;
+}
+
+.concert-text {
+  font-size: 24px;
+  font-weight: bolder;
+  /* margin: 6px 36px; */
+  background-color: pink;
+  /* background: linear-gradient(to right, black, rgb(202, 30, 30)); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Songti, "Algerian", sans-serif;
+  /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2), 0 0 10px pink; */
+}
+
+.person-list {
+  margin: 15%;
+  width: 300px;
+  height: 39px;
+  display: flex;
+  justify-content: center;
+  margin-top: 36px; 
+  /* background-color: rgb(212, 170, 170); */
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.person-text {
+  font-size: 26px;
+  font-weight: bolder;
+  margin: 4px 6px;
+  background-color: pink;
+  /* background: linear-gradient(to right, rgb(156, 8, 8), black); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+  font-family: Songti, "华文宋体", sans-serif;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  /* margin-top: 12px;  */
+  /* background-color: #CCCCCC; */
+  border-radius: 4px;
+}
+
+.person-top {
+  font-size: 12px;
+  font-weight: bolder;
+  margin: 5px 6px;
+  text-shadow: 2px 1px 2px pink;
+  background: linear-gradient(to right, rgb(121, 8, 64), rgb(13, 124, 40));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* margin-bottom: 8px; */
+  font-family: Songti, "Impact", sans-serif;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.extra-image {
+  width: 360px;
+  height: 200px; 
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}

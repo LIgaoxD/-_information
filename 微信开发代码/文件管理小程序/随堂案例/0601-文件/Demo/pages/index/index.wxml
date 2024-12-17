@@ -1,0 +1,15 @@
+<!-- 文件api -->
+
+<view>
+	<view class="title">目录管理</view>
+	<view>
+		需要操作的目录：
+		<input bindinput="change" value="{{inputValue}}" type="text"/>
+	</view>
+	<button bindtap="addDir">创建目录</button>
+	<button bindtap="rmDir">删除目录</button>
+	<button bindtap="getList">显示当前文件列表</button>
+	<view wx:for="{{list}}">{{item}}</view>
+</view>
+
+

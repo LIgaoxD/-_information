@@ -1,0 +1,10 @@
+.title{
+	text-align: center;
+	width: 100%;
+	font-weight:bold ;
+	font-size:25px ;
+}
+map{
+	width:100%;
+	height:500px;
+}

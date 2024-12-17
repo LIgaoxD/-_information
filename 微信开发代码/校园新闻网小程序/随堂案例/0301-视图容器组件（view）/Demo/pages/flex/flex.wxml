@@ -1,0 +1,22 @@
+<view class="page-section">
+	<view class="page-section-title">
+		<text>flex-direction: row\n横向布局</text>
+	</view>
+	<view class="page-section-spacing">
+		<view class="flex-wrp-row">
+			<view class="flex-item1">1</view>
+			<view class="flex-item2">2</view>
+			<view class="flex-item3">3</view>
+		</view>
+	</view>
+</view>
+<view class="page-section">
+	<view class="page-section-title">
+		<text>flex-direction: column\n纵向布局</text>
+	</view>
+	<view class="flex-wrp-column">
+		<view class="flex-item-V1">1</view>
+		<view class="flex-item-V2">2</view>
+		<view class="flex-item-V3">3</view>
+	</view>
+</view>

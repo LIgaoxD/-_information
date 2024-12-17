@@ -1,0 +1,12 @@
+<view class="box">
+	<navigator url="/pages/home/home" hover-class="hoverClass">
+		<view>
+			跳转到HOME页面
+		</view>
+	</navigator>
+	<navigator url="../../pages/home/home" open-type="redirect">
+		<view>
+			关闭当前页面打开HOME页面
+		</view>
+	</navigator>
+</view>

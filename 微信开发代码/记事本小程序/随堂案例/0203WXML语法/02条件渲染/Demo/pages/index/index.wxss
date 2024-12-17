@@ -1,0 +1,13 @@
+.blueBox,.redBox{
+	width: 100px;
+	height: 100px;
+}
+.blueBox{
+	background-color: blue;
+}
+.redBox{
+	background-color: red;
+}
+input{
+	border: 1px solid #000;
+}

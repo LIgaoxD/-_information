@@ -1,0 +1,55 @@
+<!-- 标题 -->
+<view class="shoppingCarTitle">
+    <view>饮品与小食订单</view>
+    <view>堂食</view>
+</view>
+<!-- 购物车列表 -->
+<checkbox-group bindchange="checkboxChange">
+    <view class="item" wx:for="{{orders}}" wx:key="normal">
+        <!-- 勾选按钮 -->
+        <view class="item_check_box" style="width: {{width * 0.1}}px;">
+            <checkbox checked="true" class="settlement_check_btn" value="{{item._id}}"/>
+        </view>
+        <!-- 商品信息 -->
+        <view class="item_info_box" style="width: {{width * 0.6}}px">
+            <image class="item_info_img" src="{{item.img_url}}"></image>
+            <view class="item_info">
+                <view class="item_info_title">{{item.title}}</view>
+                <view class="item_info_info">{{item.info}}</view>
+                <view class="item_info_price">¥ {{item.price}}元</view>
+            </view>
+        </view>
+        <view class="item_info_number" style="width: {{width * 0.2}}px;">
+            <button
+                class="item_info_number_reduce"
+                data-index="{{item._id}}"
+                bindtap="reduceNumber"
+            >-</button>
+            <text class="item_info_numer_text">{{item.number}}</text>
+            <button
+                class="item_info_number_add"
+                data-index="{{item._id}}"
+                bindtap="addNumber"
+            >+</button>
+        </view>
+        <view class="item_check_box" style="width: {{width * 0.1}}px;">
+            <button class="item_info_delete" data-index="{{item._id}}" bindtap="deleteBtn">
+                <image src="../../images/delete item.png"></image>
+            </button>
+        </view>
+    </view>
+</checkbox-group>
+<!-- 全选按钮    合计价格        前往结算按钮 -->
+<view class="bottom_box">
+    <view class="settlement_box">
+        <label class="settlement_check">
+            <checkbox checked="{{selectedAll}}" class="settlement_check_btn" />全选
+        </label>
+        <view class="settlement_btn_box">
+            <view class="settlement_price">
+                共计 <text>{{totalPrice}}</text> 元
+            </view>
+            <button class="settlement_btn" bindtap="goSettlement">前往结算</button>
+        </view>
+    </view>
+</view>

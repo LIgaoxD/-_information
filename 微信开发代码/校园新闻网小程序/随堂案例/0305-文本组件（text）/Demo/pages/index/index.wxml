@@ -1,0 +1,9 @@
+<!-- text -->
+<view >
+  <view>
+	<text space='emsp'>{{text}}</text>
+  </view>
+  <button disabled="{{!canAdd}}" bindtap="add">add line</button>
+  <button disabled="{{!canRemove}}" bindtap="remove">remove line</button>
+</view>
+

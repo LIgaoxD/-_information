@@ -1,0 +1,57 @@
+Page({
+	onLoad(){
+	},
+	data:{
+		// 轮播图片数据
+		images:[{
+			src:"../../images/swiper/img1.jpg"
+		},
+		{
+			src:"../../images/swiper/img2.jpg"
+		},
+		{
+			src:"../../images/swiper/img3.jpg"
+		},
+		{
+			src:"../../images/swiper/img4.jpg"
+		}],
+		iconList:[{
+			iconSrc:"../../images/icon/classroom.png",
+			title:"教室"
+		},
+		{
+			iconSrc:"../../images/icon/library.png",
+			title:"图书馆"
+		},
+		{
+			iconSrc:"../../images/icon/meetingroom.png",
+			title:"会议室"
+		},
+		{
+			iconSrc:"../../images/icon/stadium.png",
+			title:"体育场"
+		}],
+		// 活动列表数据
+		activityList:[{
+			img:"../../images/icon/activity.jpg",
+			title:"XX大学第88界学生会主席竞选",
+			time:"2020-1-1",
+			place:"会议室（A2）",
+			num:40
+		},
+		{
+			img:"../../images/icon/img.png",
+			title:"机电学院VS信息学院",
+			time:"2020-1-1",
+			place:"体育场（篮球馆）",
+			num:60
+		},
+		{
+			img:"../../images/icon/hlm.jpg",
+			title:"红学交流研讨会",
+			time:"2020-1-1",
+			place:"图书馆（展厅）",
+			num:20
+		}]
+	}
+})

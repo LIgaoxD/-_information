@@ -1,0 +1,15 @@
+//打印出40以下所有奇数
+function fun (){
+	for (var i = 0; i < 100; i++) {
+		if(i===40){
+			break;
+		}
+		if(i%2===0){
+			continue
+		}
+	  console.log(i);
+	}
+}
+module.exports ={
+	fun:fun
+}

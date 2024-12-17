@@ -1,0 +1,22 @@
+仿顺丰快递寄件小程序
+	知识点
+		组件：
+			view组件
+			text组件
+			input组件
+			picker组件
+			checkbox组件
+			checkbox-group组件
+			radio组件
+			radio-group组件
+			input组件
+			textarea组件
+			button组件
+			label组件
+		API：
+			wx.showToast
+	页面功能及思路
+		数据收集
+			给每个组件统一绑定失去焦点函数，当元素失去焦点时，获取当前组件value值，并赋予data对应数据之中，例如：寄件人对应mailInfo，收件人对应collectInfo
+		数据发送提示
+			利用wx.showToast弹出提示框表示数据收集成功

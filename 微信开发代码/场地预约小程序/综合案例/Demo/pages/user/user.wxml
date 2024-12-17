@@ -1,0 +1,24 @@
+<view>
+	<!-- 用户信息 -->
+	<view class="user-info">
+		<image class="user-img" src="{{userInfo.avatarUrl}}"></image>
+	</view>
+	<!-- 功能列表 -->
+	<view class="box">
+		<view class="box-item">
+			<image class="box-img" src="../../images/icon/record.png"></image>
+			<view>
+				预约记录
+			</view>
+		</view>
+		<view class="box-item">
+			<image class="box-img" src="../../images/icon/feedback.png"></image>
+			<view>
+				举报反馈
+			</view>
+		</view>
+		
+	</view>
+	
+	
+</view>

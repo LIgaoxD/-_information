@@ -1,0 +1,15 @@
+<view >
+	<view class="section">
+		<view >type="switch"</view>
+		<view >
+			<switch color="red" checked="{{show}}" bindchange="change" />
+		</view>
+	</view>
+
+	<view class="section">
+		<view>type="checkbox"</view>
+		<view >
+			<switch type="checkbox" checked="{{show}}" bindchange="change" />
+		</view>
+	</view>
+</view>

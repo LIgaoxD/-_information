@@ -1,0 +1,25 @@
+<view class="container">
+	<!-- 顶部导航栏 -->
+	<view class="top">
+		<view class="top-item {{index==0?'active':''}}" bindtap="change" data-index="0">教室</view>
+		<view class="top-item {{index==1?'active':''}}"  bindtap="change" data-index="1">图书馆</view>
+		<view class="top-item {{index==2?'active':''}}" bindtap="change" data-index="2">会议室</view>
+		<view class="top-item {{index==3?'active':''}}" bindtap="change" data-index="3">体育场</view>
+	</view>
+	<!-- 场地列表 -->
+	<scroll-view style="height: {{scrollHeight}}px;" scroll-y="true">
+		<view class="activity-item" wx:for="{{data[index]}}" wx:key="*this">
+			<image mode="aspectFit" class="activity-img" src="{{item.img}}"></image>
+			<view>
+				<view class="activity-item-title">{{item.name}}</view>
+				<view >容纳人数：{{item.capacity}}人</view>
+				<view >设备：{{item.equipment}}</view>
+				<view >数量：{{item.num}}</view>
+				<!-- 页面跳转并传参 -->
+				<navigator url="/pages/reserveInfo/reserveInfo?name={{item.name}}&id={{item.id}}">
+					<view class="btn">预约</view>
+				</navigator>
+			</view>
+		</view>
+	</scroll-view>
+</view>

@@ -1,0 +1,11 @@
+<textarea
+  id="textBox" 
+  cols="30" 
+  rows="10" 
+  placeholder="请输入想记录的内容" 
+  bindblur="textBox" 
+  value="{{item.text}}"
+  auto-focus="true"
+></textarea>
+
+<view class="submitBtn" bindtap="submitBtn">确定</view>

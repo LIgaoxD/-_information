@@ -1,0 +1,36 @@
+<view class="title">入职调查表</view>
+<view class="section">
+	<picker  value="1" range="{{schoolArray}}" bindchange="changeSchool">
+		<view class="picker">
+			毕业院校:{{school}}
+		</view>
+	</picker>
+</view>
+<view class="section">
+	<picker bindchange="changeHobby" mode="multiSelector" value="1" range="{{hobbyArray}}">
+		<view class="picker">
+			个人爱好:{{hobby}}
+		</view>
+	</picker>
+</view>
+<view class="section">
+	<picker bindchange="changeTime" mode="time" start="08:30" end="18:00">
+		<view class="picker">
+			期望上班时间:{{time}}
+		</view>
+	</picker>
+</view>
+<view class="section">
+	<picker bindchange="changeDate" mode="date" start="2020-01-01" end="2020-02-01">
+		<view class="picker">
+			选择入职日期:{{date}}
+		</view>
+	</picker>
+</view>
+<view class="section">
+	<picker bindchange="changeCity" mode="region" >
+		<view class="picker">
+			家庭住址:{{city}}
+		</view>
+	</picker>
+</view>

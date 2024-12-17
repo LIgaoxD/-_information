@@ -1,0 +1,19 @@
+<block wx:for="{{ItemList}}" wx:key="normal">
+  <view class="item">
+    <view class="item_info">
+      <view class="item_info_title">{{item.text}}</view>
+      <view class="item_info_time">{{item.time}}</view>
+    </view>
+    <view bindtap="handleItem" class="item_btn" data-index="{{item.id}}">
+      <image src="../../image/moreread.png"></image>
+    </view>
+    <!-- 操作层 -->
+    <view class="operation_box" wx:if="{{item.handle}}">
+      <view bindtap="deleteItem" data-index="{{item.id}}">删除</view>
+      <view bindtap="upItem" data-index="{{item.id}}">修改</view>
+      <view bindtap="cancelBtn" data-index="{{item.id}}">取消</view>
+    </view>
+  </view>
+</block>
+
+<image class="addBtn" src="../../image/add.png" bindtap="addItem"></image>

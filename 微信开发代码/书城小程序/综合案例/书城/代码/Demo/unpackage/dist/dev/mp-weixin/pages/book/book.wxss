@@ -1,0 +1,37 @@
+
+.box.data-v-d0ed62b4{
+	background-color: #f6f6f6;
+	width: 100vw;
+	height: 110vh;
+}
+.book-info.data-v-d0ed62b4{
+	background-color: #fff;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	padding: 20px 10px;
+}
+image.data-v-d0ed62b4{
+	width:200px;
+	height: 200px;
+}
+.info.data-v-d0ed62b4{
+	position: relative;
+}
+.book-name.data-v-d0ed62b4{
+	font-size: 27px;
+	font-weight: bold;
+	margin:10px 0;
+}
+.book-author.data-v-d0ed62b4{
+	font-size: 18px;
+}
+.add.data-v-d0ed62b4{
+	position: absolute;
+	bottom: 30px;
+	color: #ee4000;
+}
+.book-introduce.data-v-d0ed62b4{
+	font-size: 15px;
+}
+

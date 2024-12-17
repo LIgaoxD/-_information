@@ -1,0 +1,13 @@
+<!-- 网络api -->
+<view>
+	<view class="title">工作计划</view>
+	<view class="box">
+		<view >工作内容:</view>
+		<input value="{{inputValue}}" type="text" bindinput="change" placeholder="请输入内容..."/>
+		<button bindtap="addInfo" >添加</button>
+	</view>
+	<button bindtap="getInfo">获取已记录的内容</button>
+	<button bindtap="postInfo">上传工作内容</button>
+	<button bindtap="clear">清空列表</button>
+	<view wx:for="{{list}}" wx:key="*this">{{item}}</view>
+</view>

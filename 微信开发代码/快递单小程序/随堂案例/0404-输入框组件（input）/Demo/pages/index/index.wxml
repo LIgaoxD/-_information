@@ -1,0 +1,11 @@
+<form bindreset="formRest" bindsubmit="formSubmit">
+	<view>
+		<view>可输入文本并实时显示:{{text}}</view>
+		<input type="text" name="text" bindinput="changeText" value="" placeholder="请输入用户名"/>
+	</view>
+	<view>
+		<view>密码可以隐藏不可见，可以限制长度不大于10</view>
+		<input type="text" name="password" password="true" placeholder="请输入密码" maxlength="10"/>
+	</view>
+	<button form-type="submit" type="primary">登录</button>
+</form>

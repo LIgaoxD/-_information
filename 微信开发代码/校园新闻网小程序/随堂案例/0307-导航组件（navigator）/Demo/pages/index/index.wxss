@@ -1,0 +1,7 @@
+
+.hoverClass{
+	color: red;
+}
+view{
+	text-align: center;
+}

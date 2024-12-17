@@ -1,0 +1,12 @@
+.box{
+  margin:20rpx;
+}
+.change1{
+  font-size: 12px;
+}
+.change2{
+  font-weight: 400;
+}
+.change3{
+  background: red;
+}

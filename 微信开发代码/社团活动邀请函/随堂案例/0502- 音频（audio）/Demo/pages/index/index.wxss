@@ -1,0 +1,13 @@
+.title{
+	text-align: center;
+	width: 100%;
+	font-weight:bold ;
+	font-size:25px ;
+}
+.section{
+	width:80%;
+	margin:5px auto;
+}
+audio{
+	width: 100%;
+}

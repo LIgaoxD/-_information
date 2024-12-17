@@ -1,0 +1,11 @@
+var a=1;
+var b="hello world!";
+var c;
+function fun (){
+	console.log(a);
+	console.log(b);
+	console.log(c);
+}
+module.exports ={
+	fun:fun
+}
